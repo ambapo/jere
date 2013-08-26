@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title))%></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+	<div>
+		<section class="logo">
+			<%= link_to "buruQueens", '#',id: "logo"  %>
+		</section>
+		<section class="para">
+		<p>"Style is shows who you are without having to speak."</>
+		</section>
+	</div>
+	<div>
+
+<%= render 'layouts/header' %>
+<%= render 'layouts/footer' %>
+
+</div>
+</body>
+</html>

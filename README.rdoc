@@ -1,0 +1,1 @@
+BuruQueen is designed in ruby on rails. It is an online boutique for placing orders on ladies clothings and cosmetics.
