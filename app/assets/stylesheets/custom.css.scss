@@ -78,7 +78,6 @@ p {
 }
 .upcornert {
   float: right;
-  color: #D2691E;
   padding: 30px 50px 0 0;
 }
 .nav { 
@@ -107,6 +106,7 @@ footer {
   }
   small {
     float: left;
+    color: #2F4F4F;
     }
     .chini {
     padding-right: 50px;
@@ -117,6 +117,7 @@ footer {
     li {
       float: left;
       margin-left: 10px;
+      color: #2F4F4F;
     }
   }
 }
@@ -147,4 +148,28 @@ aside {
   line-height: 1;
   float: left;
   }
+}
+/* forms */
+
+input, textarea, select, alert, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+input {
+  height: auto !important;
+}
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
 }

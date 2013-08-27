@@ -8,21 +8,13 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
-	<div>
-		<span class="upcornert">
-			<%= link_to "Sign up", signup_path, class: "btn btn-large" %>
-		</span>
-		<section class="logo">
-			<%= link_to "buruQueens", '#',id: "logo"  %>
-		</section>
-		<aside class="span8">
-		<section class="para">
-		<p>"Style shows who you are without having to speak."</>
-		</section>
-		</aside>
-	</div>
-	<div>
-		<%= render 'layouts/header' %>
+	<div class="upcornert">
+	
+	<%= render 'shared/for_customer' %></div>
+	<%= render 'shared/logo' %>
+	<%= render 'layouts/header' %>
+	<div class="container">
+		<%= render 'shared/flash' %>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 	</div>

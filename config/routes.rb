@@ -1,5 +1,8 @@
 Jere::Application.routes.draw do
 
+  resources :customers
+  resources :sessions, only: [:new, :create, :destroy]
+
   get "customers/new"
 
    root to: 'static_pages#home'
@@ -8,7 +11,9 @@ Jere::Application.routes.draw do
   match '/contact',   to: 'static_pages#contact'
   match '/fashion',   to: 'static_pages#fashion'
   match '/beauty',    to: 'static_pages#beauty'
-  match '/signup',    to: 'customers#new' 
+  match '/signup',    to: 'customers#new'
+  match '/signin',    to:  'sessions#new' 
+  match '/signout',   to:  'sessions#destroy', via: :delete
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
