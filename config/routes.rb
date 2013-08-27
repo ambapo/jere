@@ -1,11 +1,14 @@
 Jere::Application.routes.draw do
 
+  get "customers/new"
+
    root to: 'static_pages#home'
 
   match '/about',     to: 'static_pages#about'
   match '/contact',   to: 'static_pages#contact'
   match '/fashion',   to: 'static_pages#fashion'
-  match '/beauty',    to: 'static_pages#beauty' 
+  match '/beauty',    to: 'static_pages#beauty'
+  match '/signup',    to: 'customers#new' 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

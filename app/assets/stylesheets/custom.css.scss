@@ -20,7 +20,8 @@ textarea {
 	resize: vertical;
 }
 .navbar {
-	padding: 100px 200px 0 200px;
+	padding: 100px 200px 10px 200px;
+  border-bottom: 1px solid $grayMediumLight;
 }
 .center {
 	text-align: left
@@ -56,12 +57,12 @@ p {
 
 #logo {
   float: left;
-  margin: 0px;
+  margin: 5px;
   font-size: 2.9em;
-  color: #008000;
+  color: #2F4F4F;
   text-transform: none;
   letter-spacing: -1px;
-  padding: 10px 0 0 180px;
+  padding: 0px 0 0 180px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -74,6 +75,11 @@ p {
   padding-left: 200px 0 0 10px;
   font-size: 1.5em;
   color: #A0522D;
+}
+.upcornert {
+  float: right;
+  color: #D2691E;
+  padding: 30px 50px 0 0;
 }
 .nav { 
 	text-trasformation: uppercase;
@@ -115,3 +121,30 @@ footer {
   }
 }
 
+aside {
+  section {
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+  span2 {
+  margin-bottom: 3px;
+  line-height: 1;
+  float: left;
+  }
+}
