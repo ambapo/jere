@@ -1,21 +1,26 @@
 
+	
 		<div id="fat-menu" class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-			Account <b class="caret"></b></a>
+			Account <b class="caret"></b>
 			
 			<% if signed_in? %>
 	
 			<ul class="dropdown-menu">
 				<li><%= link_to "Profile", current_customer %></li>
-				<li><%= link_to "Settings", '#' %></li>
+				<li><%= link_to "Settings", edit_customer_path(current_customer) %></li>
 				<li class="divider"></li>
 				<li>
-					<%= link_to "Sign out", signout_path, method: "delete" %></li>
-			<% else %>
+				<%= link_to "Sign out", signout_path, method: "delete" %></li></ul>
+			    <% else %>
+
+
+			<ul class="dropdown-menu">
 			<li>
-			<%= link_to "Sign up", signup_path, class: "btn btn-large" %></li>
+			<%= link_to "Sign in", signin_path%></li>
+			<li><%= link_to "Sign up", signup_path %></li>
 			<% end %></ul>
-			</div>
+			</div></a>
 		
 
 

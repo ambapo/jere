@@ -10,7 +10,7 @@ html {
 }
 body {
 	padding-top: 20px;
-	background-image:url('bakg.jpg'); 
+	background-color: E6E6FA; 
 	margin: 0 50px 0 50px;
 }
 section {
@@ -66,7 +66,7 @@ p {
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    
     
   }
 }
@@ -143,10 +143,13 @@ aside {
       margin-top: 0px;
     }
   }
-  span2 {
+  .span2 {
   margin-bottom: 3px;
   line-height: 1;
-  float: left;
+  float: right;
+
+  h1 { font-sise: 1.3em; }
+
   }
 }
 /* forms */
@@ -172,4 +175,7 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+.row {
+   border-bottom: 3px solid $grayMediumLight;
 }
