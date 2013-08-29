@@ -1,4 +1,0 @@
-<div class="picha">
-<%= image_tag(src="nine.jpg", :alt => "Posting...") %>
-<b>Vertical Metallic Strip Tank Top</b>
-</div>
