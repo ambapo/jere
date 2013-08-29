@@ -1,4 +1,0 @@
-<div class="picha">
-<%= image_tag(src="six.jpg", :alt => "Posting...") %>
-<b>Open Mesh Sexy Boby Suit</b>
-</div>
